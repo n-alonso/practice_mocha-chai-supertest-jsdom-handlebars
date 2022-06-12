@@ -1,16 +1,18 @@
-// test/routes/index-test.js
-const { assert } = require('chai');
-const request = require('supertest');
-const { jsdom } = require('jsdom');
+const { assert } = require('chai')
+const request = require('supertest')
+const { JSDOM } = require('jsdom')
 
-const app = require('../../app');
+console.log(JSDOM)
+
+const app = require('../index.js')
 
 const parseTextFromHTML = (htmlAsString, selector) => {
-    const selectedElement = jsdom(htmlAsString).querySelector(selector);
+    const dom = new JSDOM(htmlAsString).window.document
+    const selectedElement = dom.querySelector(selector)
     if (selectedElement !== null) {
-      return selectedElement.textContent;
+      return selectedElement.textContent
     } else {
-      throw new Error(`No element with selector ${selector} found in HTML string`);
+      throw new Error(`No element with selector ${selector} found in HTML string`)
     }
 };
 
@@ -50,19 +52,3 @@ describe('/', () => {
     })
   })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,31 @@
+{
+  "name": "practice_mocha-chai-supertest-jsdom-handlebars",
+  "version": "1.0.0",
+  "description": "Simple practice test suite for a mock app using Mocha, Chai, SuperTest, jsdom, and Handlebars",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n-alonso/practice_mocha-chai-supertest-jsdom-handlebars.git"
+  },
+  "author": "Nicolas Alonso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n-alonso/practice_mocha-chai-supertest-jsdom-handlebars/issues"
+  },
+  "homepage": "https://github.com/n-alonso/practice_mocha-chai-supertest-jsdom-handlebars#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "jsdom": "^19.0.0",
+    "mocha": "^10.0.0",
+    "supertest": "^6.2.3"
+  }
+}
