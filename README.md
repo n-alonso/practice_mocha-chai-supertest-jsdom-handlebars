@@ -8,3 +8,4 @@ Simple practice test suite for a mock app using __Mocha__, __Chai__, __SuperTest
  * Navigate to this project: `cd <dir_path>`
  * Install the project's dependencies: `npm install`
  * Run the test suite: `npm test`
+ * Or run the project: `npm start`
