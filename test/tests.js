@@ -2,8 +2,6 @@ const { assert } = require('chai')
 const request = require('supertest')
 const { JSDOM } = require('jsdom')
 
-console.log(JSDOM)
-
 const app = require('../index.js')
 
 const parseTextFromHTML = (htmlAsString, selector) => {
